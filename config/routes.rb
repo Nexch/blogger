@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   def index
     @articles = Article.all
   end
+  root to: 'articles#index'
   resources :articles
 end
